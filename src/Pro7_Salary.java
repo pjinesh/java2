@@ -5,6 +5,7 @@ public class Pro7_Salary {
         double Gross = Salary + (Salary * hra) + (Salary *da) + (Salary * med);
         Double Ded = (Gross*pf) + (Gross*ins);
         Double Net = Gross - Ded;
+        System.out.print("Salary ");
         System.out.println(Net);
 
         System.out.println("(25000 > ) " + ((Net>=25000)?'A':' '));
